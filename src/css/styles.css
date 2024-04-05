@@ -5,21 +5,92 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-navigation button,
+.sl-wrapper .sl-counter {
+  color: #fff !important;
+}
+.sl-overlay {
+  background: #2e2f42 !important;
+}
+
+.home-list {
+  padding: 40px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 30px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  list-style-type: none;
+  padding: 40px;
+  max-width: 1208px;
+  margin: 0 auto;
+}
+.gallery-link {
+  display: block;
+}
+.gallery-image {
+  display: block;
+  width: 360px;
+  height: 200px;
+}
+form {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 360px;
+  margin: 0 auto;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 400;
+}
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  min-width: 400px;
+  display: block;
+  background-color: transparent;
+  transition: border-color 200ms ease-in-out;
+  outline: none;
+}
+textarea {
+  resize: none;
+  height: 80px;
+}
+input:hover,
+textarea:hover {
+  border-color: black;
+}
+input:focus,
+textarea:focus {
+  border-color: rgba(0, 0, 0, 0.4);
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  background-color: #4e75ff;
+  display: block;
+  width: fit-content;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  transition: background-color 200ms ease-in-out;
+}
+button:hover {
+  background-color: #6c8cff;
 }
